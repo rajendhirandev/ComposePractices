@@ -39,8 +39,8 @@ fun MyScreenView() {
                 noOfTimes = count
             }
 
-            if (noOfTimes in vStart..vEnd) {
-                if(noOfTimes==vEnd) {
+            if (noOfTimes in vStart..vEnd+1) {
+                if(noOfTimes==vEnd+1) {
                     vStart =noOfTimes+5
                     vEnd =vStart+2
                 }
