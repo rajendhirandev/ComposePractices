@@ -39,12 +39,12 @@ fun MyScreenView() {
                 noOfTimes = count
             }
 
-            if (noOfTimes in vStart..vEnd+1) {
-                if(noOfTimes==vEnd+1) {
-                    vStart =noOfTimes+5
-                    vEnd =vStart+2
-                }
+            if (noOfTimes in vStart..vEnd + 1) {
                 Text(text = "I'm Visible between $vStart to $vEnd")
+                if (noOfTimes == vEnd + 1) {
+                    vStart = noOfTimes + 5
+                    vEnd = vStart + 2
+                }
             }
         }
     }
@@ -65,7 +65,6 @@ fun ButtonCounter(count: Int, clickAction: (Int) -> Unit) {
         }
     }
 }
-
 
 
 @Preview(showBackground = true)
