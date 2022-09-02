@@ -57,9 +57,9 @@ fun MyCustomerList(
             CustomerListItem(
                 it,
                 modifier = modifier, {
-                    val c = customerList.count { it.isSelected }
-                    if (c > 0) {
-                        Toast.makeText(ctx, "Total $c Employee(s) Selected ", Toast.LENGTH_SHORT)
+                    val customer = customerList.count { it.isSelected }
+                    if (customer > 0) {
+                        Toast.makeText(ctx, "Total $customer Employee(s) Selected ", Toast.LENGTH_SHORT)
                             .show()
                     }
                 }, { removeCustomer(it) })

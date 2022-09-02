@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyCustomers()
+            MyScreenView()
         }
     }
 }
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     ComposePracticesTheme {
-        MyCustomers()
+        MyScreenView()
     }
 }
 
