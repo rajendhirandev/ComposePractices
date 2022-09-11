@@ -8,13 +8,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.module.composepractices.screens.MyCustomers
 import com.module.composepractices.screens.MyInputScreen
 import com.module.composepractices.screens.MyScreenView
+import com.module.composepractices.screens.TaskListScreen
 import com.module.composepractices.ui.theme.ComposePracticesTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyScreenView()
+            TaskListScreen()
         }
     }
 }
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     ComposePracticesTheme {
-        MyScreenView()
+        TaskListScreen()
     }
 }
 
